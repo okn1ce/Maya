@@ -1,0 +1,102 @@
+function seeTitle() {
+	document.getElementById('Title').style.display = 'inline';
+	document.getElementById('LaunchSim').style.display = 'inline';
+}
+
+function launch_toast() {
+    var x = document.getElementById("toast")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}
+
+var instance = new TypeIt('#dialogue', {
+  speed: 50,
+  waitUntilVisible: true,
+  afterComplete: (instance) => {
+  	seeTitle();
+  	launch_toast();
+  }
+})
+.type('Oh.')
+.options({speed: 160})
+.pause(1200)
+.break()
+.options({speed: 40})
+.type('Bienvenue Maya.')
+.pause(1600)
+.delete()
+.type("Je t'attendais.")
+.pause(1200)
+.break()
+.options({speed: 45})
+.type("Je ne peux pas parler par appel, mais je suis bien là.")
+.pause(1300)
+.break()
+.type("Ce dispositif que j'ai codé transmet mes sentiments, par écrit, sur ton écran.")
+.pause(1300)
+.break()
+.type("J'ai beaucoup réfléchi, à des manières de te montrer mon affection, mon amour pour toi.")
+.pause(650)
+.break()
+.type("Les textes, c'est trop facile, les dessins, déjà fait, une vidéo, déjà fait, une présentation POWERPOINT ? Déjà fait.")
+.pause(900)
+.break()
+.type("Je veux une manière plus originale, pour te montrer que peu importe ce qui se passe, j'innoverai toujours et je trouvais toujours une façon de te dire que")
+.type('.')
+.pause(500)
+.type('. ')
+.pause(700)
+.options({speed: 15})
+.type('<strong style="color: #C1E1C1;">i adore u</strong>')
+.pause(3500)
+.delete()
+.options({speed: 50})
+.type("A quelques heures près, nous allons faire nos deux mois de relation.")
+.pause(500)
+.type(" Deux mois.")
+.pause(500)
+.type(" 60 jours.")
+.pause(500)
+.type(" 1460 heures.")
+.break()
+.pause(2000)
+.type("Je veux que tu saches que malgré tout, j'ai passé les deux mois les plus heureux de ma vie, ou en tout cas, de ces dernières années.")
+.break()
+.pause(2500)
+.type("Chaque fois que je vais dormir le soir, je me rends compte d'à quel point tu es ma pépite, celle que j'ai choisi pour être ma copine, celle qui me complète et avec qui je me sens à l'aise.")
+.break()
+.pause(2500)
+.type("Tu m'apportes beaucoup plus que ce que tu me prends. Beaucoup plus. J'ai horreur des moments où tu n'es pas avec moi, ceux où je suis confronté à la vie sans toi à mes côtés.")
+.break()
+.pause(2500)
+.type("J'ai fait des erreurs, je l'avoue et surtout, je les regrettent profondémment. Je veux que tu te souviennes de nos moments les plus heureux qu'on ai eu, pas de ceux où l'on a été influencé par nos moods, notre environnement.")
+.break()
+.pause(2500)
+.type("J'ai été tellement aveuglé par le fait de vouloir que notre relation soit parfaite et que tu m'abandonnes pas, que j'ai fait de graves erreurs.")
+.break()
+.break()
+.pause(2500)
+.type("Je veux que tu comprennes, que vraiment, je t'adore plus que tout. De l'autre bout de la Terre, je fais de mon mieux pour rendre meilleur tes journées. Pour te faire sourire, te rendre heureuse et te garder à mes côtés.")
+.pause(4500)
+.delete()
+.type("T'es une source de bonheur dans ma vie actuellement, je refuse de te laisser tomber. Je refuse de te rendre triste. Je regrette chaque moment où j'ai pu te faire du mal, chaque moment que tu détestes avec moi.")
+.break()
+.pause(2500)
+.type("Je fais de mon mieux pour les éviter. Pour tirer le meilleur de chacune de nos intéractions. Maya, je t'adore plus que tout, je t'apprécie, toi, ton sourire, ta personnalité, tes moments où tu t'énerves, quand tu cries et quand tu rigoles.")
+.break()
+.pause(2500)
+.type("Rien ne me fera changer d'avis sur ça. Rien du tout. Nous sommes ensemble pour le meilleur et le pire, garde ça en tête.")
+.break()
+.pause(2500)
+.type("Passons au dessus de nos différences et profitons de nos similitudes, de nos moments de bonheur. Célebrons notre amour. Mangeons des compotes ensemble. Envoie moi des Reels. Rigolons en appel. Aimons nous à vie.")
+.break()
+.break()
+.pause(3200)
+.type("Tout ce que j'ai toujours voulu, c'est te rendre heureuse.")
+.pause(4500)
+.delete()
+.type("Je t'adore, Maya Michalina Pigerol, avec tes défauts et tes qualités. Je te promets que je ferai de mon mieux pour toujour m'améliorer. Souris pour ce qui nous attends, parce que tout ira bien :)")
+.pause(4500)
+.delete()
+.go();
+instance.destroy();
